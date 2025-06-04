@@ -2,6 +2,9 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
+// Define the base URL for the API depending on the environment
+const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:7281';
+
 // Helper function to return color styles based on tech name
 function getTechColor(tech) {
   switch (tech.toLowerCase()) {
@@ -74,7 +77,7 @@ function ProjectList() {
 
   // Fetch project data from the backend API once on mount
   useEffect(() => {
-    fetch("https://portfolio-project-vtl0.onrender.com/api/projects")
+    fetch('${API_BASE}/api/projects')
       .then((res) => res.json())
       .then((data) => setProjects(data))
       .catch((err) => console.error("Error fetching projects:", err));
