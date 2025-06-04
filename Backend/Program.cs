@@ -15,7 +15,7 @@ namespace Backend
                     {
                         policy.WithOrigins(
                             "http://localhost:5173",
-                            "https://portfolio-project-rust-rho.vercel.app/"
+                            "https://portfolio-project-rust-rho.vercel.app"
                             )
                         .AllowAnyHeader()
                         .AllowAnyMethod();
