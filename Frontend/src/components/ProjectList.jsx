@@ -74,7 +74,7 @@ function ProjectList() {
 
   // Fetch project data from the backend API once on mount
   useEffect(() => {
-    fetch("https://localhost:7281/api/projects")
+    fetch("https://portfolio-project-vtl0.onrender.com/api/projects")
       .then((res) => res.json())
       .then((data) => setProjects(data))
       .catch((err) => console.error("Error fetching projects:", err));
