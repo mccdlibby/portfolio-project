@@ -77,7 +77,7 @@ function ProjectList() {
 
   // Fetch project data from the backend API once on mount
   useEffect(() => {
-    fetch(${import.meta.env.VITE_BASE_URL}/api/projects)
+    fetch(`${import.meta.env.VITE_BASE_URL}/api/projects`)
       .then((res) => res.json())
       .then((data) => setProjects(data))
       .catch((err) => console.error("Error fetching projects:", err));
