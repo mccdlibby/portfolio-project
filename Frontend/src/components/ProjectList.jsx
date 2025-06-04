@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Define the base URL for the API depending on the environment
-const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:7281';
+//const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:7281';
 
 // Helper function to return color styles based on tech name
 function getTechColor(tech) {
@@ -77,7 +77,7 @@ function ProjectList() {
 
   // Fetch project data from the backend API once on mount
   useEffect(() => {
-    fetch(`${API_BASE}/api/projects`)
+    fetch(${import.meta.env.VITE_BASE_URL}/api/projects)
       .then((res) => res.json())
       .then((data) => setProjects(data))
       .catch((err) => console.error("Error fetching projects:", err));
