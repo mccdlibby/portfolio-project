@@ -25,7 +25,13 @@ namespace Backend.Controllers
                     RepoUrl = "https://github.com/mccdlibby/portfolio-frontend",
                     LiveUrl = "",
                     TechStack = new List<string> { "React", "Tailwind", "ASP.NET Core", "C#" },
-                    Featured = true
+                    Featured = true,
+                    Tabs = new Dictionary<string, string>
+                    {
+                        { "Overview", "This portfolio site was built with React and Tailwind CSS for a responsive and clean interface. ASP.NET Core powers the backend API that delivers project data." },
+                        { "Challenges", "One key challenge was implementing framer-motion animations without creating rendering artifacts. Another was maintaining responsiveness across viewports." },
+                        { "Outcomes", "The site showcases software projects with modal previews, fade-in animations, paginated views, and dynamic tech stack styling." }
+                    }
                 },
                 new Project
                 {
@@ -36,7 +42,13 @@ namespace Backend.Controllers
                     RepoUrl = "https://github.com/mccdlibby/todo-winforms-app",
                     LiveUrl = "",
                     TechStack = new List<string> { "C#", ".NET", "WinForms", "Windows" },
-                    Featured = false
+                    Featured = false,
+                    Tabs = new Dictionary<string, string>
+                    {
+                        { "Overview", "A Windows Forms desktop app built with C# and .NET 8.  It allows users to add tasks, optionally set due dates, and mark them complete." },
+                        { "Challenges", "Handling .vs folder issues with Git and designing a clean UX for task creation and status toggling." },
+                        { "Outcomes", "The app includes due date handling, completion feedback, and can be distributed as an executable or source code." }
+                    }
                 },
                 new Project {
                     Id = 3,
@@ -46,7 +58,13 @@ namespace Backend.Controllers
                     RepoUrl = "https://github.com/mccdlibby/book-reviews-web",
                     LiveUrl = "",
                     TechStack = new List<string> { "Python", "Django", "SQLite", "HTML", "CSS", "JavaScript" },
-                    Featured = false
+                    Featured = false,
+                    Tabs = new Dictionary<string, string>
+                    {
+                        { "Overview", "A full-stack web application for submitting and browsing book reviews, built using Django, PostgreSQL, and Bootstrap." },
+                        { "Challenges", "Implementing user authentication securely and managing relationships between users, books, and reviews." },
+                        { "Outcomes", "Successfully built login systems, dynamic review pages, and CRUD operations for authenticated users." }
+                    }
                 },
 
                 // Placeholder projects for potential future use
