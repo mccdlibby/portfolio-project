@@ -189,14 +189,48 @@ function ProjectList() {
               continuous improvement.
             </p>
             {/* Career and education timeline */}
-            <ul className="list-disc list-inside space-y-2">
-              <li>2013 - Started Bachelor's degree in Computer Science</li>
-              <li>2015 - Left college due to needing a spinal fusion </li>
-              <li>2022 - Returned to college after getting a spinal fusion</li>
-              <li>2023 - Built academic and personal projects using Python, Java, C#, SQL, and other technologies</li>
-              <li>2024 - Built a book review platform and a warehouse system</li>
-              <li>2025 - Graduated; currently seeking a full-time software development role</li>
-            </ul>
+            <section className="py-8">
+                  <h3 className="text-xl font-bold mb-4">Education Timeline</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="bg-white rounded-2xl p-4 shadow">
+                      <h4 className="text-lg font-semibold">2013</h4>
+                      <p>Started Bachelor's degree in Computer Science</p>
+                    </div>
+                    <div className="bg-white rounded-2xl p-4 shadow">
+                      <h4 className="text-lg font-semibold">2015</h4>
+                      <p>Paused college due to needing a spinal fusion</p>
+                    </div>
+                    <div className="bg-white rounded-2xl p-4 shadow">
+                      <h4 className="text-lg font-semibold">2022</h4>
+                      <p>Returned to college and resumed coursework</p>
+                    </div>
+                    <div className="bg-white rounded-2xl p-4 shadow">
+                      <h4 className="text-lg font-semibold">2022-2025</h4>
+                      <p>Completed courses in:</p>
+                      <ul className="list-disc list-inside ml-4 mt-2">
+                        <li>Data Structures & Algorithms</li>
+                        <li>Computer Architecture I & II</li>
+                        <li>Operating Systems</li>
+                        <li>Software Engineering & OOP</li>
+                        <li>Databases & Distributed Systems</li>
+                        <li>AI, Neural Networks, and Deep Learning</li>
+                        <li>Ethics & Communication for Computing</li>
+                      </ul>
+                    </div>
+                    <div className="bg-white rounded-2xl p-4 shadow">
+                      <h4 className="text-lg font-semibold">2023</h4>
+                      <p>Built academic and personal projects using Python, Java, C#, SQL, and more</p>
+                    </div>
+                    <div className="bg-white rounded-2xl p-4 shadow">
+                      <h4 className="text-lg font-semibold">2024</h4>
+                      <p>Developed a full-stack book review platform and a warehouse system</p>
+                    </div>
+                    <div className="bg-white rounded-2xl p-4 shadow">
+                      <h4 className="text-lg font-semibold">2025</h4>
+                      <p>Graduated; currently seeking a full-time software development role</p>
+                    </div>
+                  </div>
+                </section>
           </div>
 
           {/* Link to download resume as a PDF */}
