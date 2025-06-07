@@ -33,7 +33,7 @@ namespace Backend.Controllers
                     Title = "To-Do List (WinForms)",
                     Description = "A basic task manager with a GUI built in .NET WinForms.",
                     ImageUrl = "/images/todo.png",
-                    RepoUrl = "https://github.com/mccdlibby/todo-winforms",
+                    RepoUrl = "https://github.com/mccdlibby/todo-winforms-app",
                     LiveUrl = "",
                     TechStack = new List<string> { "C#", ".NET", "WinForms", "Windows" },
                     Featured = false
@@ -44,7 +44,7 @@ namespace Backend.Controllers
                     Description = "Full-stack Django app with user ratings and reviews.",
                     ImageUrl = "https://assets.imagineforest.com/blog/wp-content/uploads/2015/08/book_review-1024x683.jpg",
                     RepoUrl = "https://github.com/mccdlibby/book-reviews-web",
-                    LiveUrl = "https://bookreview.yoursite.com",
+                    LiveUrl = "",
                     TechStack = new List<string> { "Python", "Django", "SQLite", "HTML", "CSS", "JavaScript" },
                     Featured = false
                 },
