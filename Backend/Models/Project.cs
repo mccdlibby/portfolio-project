@@ -10,5 +10,6 @@
         public string LiveUrl { get; set; }
         public List<string> TechStack { get; set; }
         public bool Featured { get; set; }
+        public Dictionary<string, string> Tabs { get; set; }
     }
 }
