@@ -310,21 +310,7 @@ function ProjectList() {
 
             {/* Dynamic tab content based on selected tab */}
             <div className="text-sm">
-              {activeTab === 'Overview' && (
-                <p>
-                  This portfolio site was built with React and Tailwind CSS for a responsive and clean interface. ASP.NET Core powers the backend API that delivers project data.
-                </p>
-              )}
-              {activeTab === 'Challenges' && (
-                <p>
-                  One key challenge was implementing framer-motion animations without creating rendering artifacts. Another was maintaining responsiveness across viewports.
-                </p>
-              )}
-              {activeTab === 'Outcomes' && (
-                <p>
-                  The site showcases software projects with modal previews, fade-in animations, paginated views, and dynamic tech stack styling.
-                </p>
-              )}
+              <p>{selectedProject.tabs?.[activeTab] || "Content not available."}</p>
             </div>
 
             {/* External links for repo and live site */}
