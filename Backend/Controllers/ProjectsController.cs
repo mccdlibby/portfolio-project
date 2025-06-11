@@ -22,7 +22,7 @@ namespace Backend.Controllers
                     Title = "Portfolio Website",
                     Description = "React frontend with C# ASP.NET Core backend.",
                     ImageUrl = "/images/dash.png",
-                    RepoUrl = "https://github.com/mccdlibby/portfolio-frontend",
+                    RepoUrl = "https://github.com/mccdlibby/portfolio-project",
                     LiveUrl = "",
                     TechStack = new List<string> { "React", "Tailwind", "ASP.NET Core", "C#" },
                     Featured = true,
