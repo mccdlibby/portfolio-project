@@ -61,7 +61,7 @@ namespace Backend.Controllers
                     Featured = false,
                     Tabs = new Dictionary<string, string>
                     {
-                        { "Overview", "A full-stack web application for submitting and browsing book reviews, built using Django, PostgreSQL, and Bootstrap." },
+                        { "Overview", "A full-stack web application for submitting and browsing book reviews, built using Django, SQLite, and Bootstrap." },
                         { "Challenges", "Implementing user authentication securely and managing relationships between users, books, and reviews." },
                         { "Outcomes", "Successfully built login systems, dynamic review pages, and CRUD operations for authenticated users." }
                     }
